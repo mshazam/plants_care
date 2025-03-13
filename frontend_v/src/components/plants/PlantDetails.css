@@ -1,0 +1,152 @@
+.plant-details-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #27ae60;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.back-button:hover {
+  color: #219a52;
+}
+
+.plant-header {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.plant-header h1 {
+  color: #2c3e50;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.scientific-name {
+  color: #666;
+  font-size: 1.2rem;
+  margin: 0.5rem 0 0 0;
+}
+
+.plant-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.plant-section {
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.plant-section h3 {
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+  font-size: 1.3rem;
+  border-bottom: 2px solid #27ae60;
+  padding-bottom: 0.5rem;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.info-item strong {
+  color: #2c3e50;
+  font-size: 0.9rem;
+}
+
+.info-item span {
+  color: #555;
+  font-size: 1.1rem;
+}
+
+.growth-stages,
+.pest-info ul,
+.companion-plants {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.growth-stages li,
+.pest-info ul li,
+.companion-plants li {
+  background: #f8f9fa;
+  padding: 0.8rem;
+  border-radius: 4px;
+  color: #555;
+}
+
+.care-instructions {
+  color: #555;
+  line-height: 1.6;
+}
+
+.care-instructions p {
+  margin: 0.5rem 0;
+}
+
+.pest-info h4 {
+  color: #2c3e50;
+  margin: 0 0 1rem 0;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+  color: #666;
+}
+
+.error {
+  text-align: center;
+  padding: 2rem;
+  color: #e74c3c;
+  background-color: #fde8e8;
+  border-radius: 8px;
+  margin: 1rem;
+}
+
+@media (max-width: 768px) {
+  .plant-details-container {
+    padding: 1rem;
+  }
+
+  .plant-header h1 {
+    font-size: 2rem;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .growth-stages,
+  .pest-info ul,
+  .companion-plants {
+    grid-template-columns: 1fr;
+  }
+} 

@@ -1,0 +1,180 @@
+/* Profile Sidebar Styling */
+.profile-sidebar {
+    position: fixed;
+    top: 0;
+    right: -320px; /* Sidebar initially hidden */
+    width: 300px;
+    height: 100vh;
+    background: #1E3A34; /* Dark greenish shade */
+    color: white;
+    padding: 20px;
+    transition: right 0.4s ease-in-out;
+    box-shadow: -3px 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px 0 0 10px;
+    z-index: 1000;
+}
+
+/* When sidebar is active */
+.profile-sidebar.active {
+    right: 0;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    background: none;
+    border: none;
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Username Styling */
+.username {
+    cursor: pointer;
+    font-weight: bold;
+    color: #136F63;
+    font-size: 24px;
+    transition: color 0.3s ease-in-out;
+    margin: 0;
+}
+
+.username:hover {
+    color: #0b453c;
+}
+
+/* User Info Styling */
+.user-info {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #2F524B;
+    animation: fadeIn 0.4s ease-in-out;
+}
+
+.user-info p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* Dashboard Container */
+.dashboard-container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Dashboard Header */
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.dashboard-actions {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+}
+
+.dashboard-content p {
+    margin: 0.5rem 0;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Buttons */
+.manage-profile-button,
+.logout-button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.manage-profile-button {
+    background: #4caf50;
+    color: white;
+}
+
+.manage-profile-button:hover {
+    background: #2e7d32;
+    transform: translateY(-2px);
+}
+
+.logout-button {
+    background: #e0e0e0;
+    color: #424242;
+}
+
+.logout-button:hover {
+    background: #bdbdbd;
+    transform: translateY(-2px);
+}
+
+.view-profile-button {
+    background: #4caf50;
+    color: white;
+}
+
+.view-profile-button:hover {
+    background: #2e7d32;
+    transform: translateY(-2px);
+}
+
+.plant-database-button {
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.2s ease;
+}
+
+.plant-database-button:hover {
+    background-color: #219a52;
+}
+
+/* Profile Picture */
+.profile-picture {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 20px auto;
+    border: 4px solid #4caf50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in Effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

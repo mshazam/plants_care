@@ -1,0 +1,86 @@
+/* 🌱 Gardening-Themed Login Form */
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #4caf50, #2e7d32); /* Green theme */
+    animation: fadeIn 1s ease-in-out;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 350px;
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.login-box:hover {
+    transform: scale(1.02);
+}
+
+/* 🌟 Input Fields */
+.login-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #4caf50;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s ease-in-out;
+}
+
+.login-input:focus {
+    border-color: #2e7d32;
+    box-shadow: 0 0 5px #4caf50;
+}
+
+/* 🚀 Animated Login Button */
+.login-button {
+    width: 100%;
+    padding: 12px;
+    background: #4caf50;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-button:hover {
+    background: #2e7d32;
+}
+
+/* ❌ Error Message */
+.error-message {
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 🎭 Prevent multiple clicks */
+.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* 🎬 Smooth Fade-In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

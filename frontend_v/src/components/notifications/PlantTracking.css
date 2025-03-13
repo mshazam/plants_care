@@ -1,0 +1,373 @@
+.plant-tracking-container {
+  padding: 20px 0;
+}
+
+.intro-section {
+  margin-bottom: 30px;
+}
+
+.intro-section h3 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.intro-section p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.tracking-sections {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+@media (min-width: 992px) {
+  .tracking-sections {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.section-header h4 {
+  color: #2e7d32;
+  margin: 0;
+  font-size: 18px;
+}
+
+.add-button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #1b5e20;
+}
+
+.add-button:disabled {
+  background-color: #c8e6c9;
+  cursor: not-allowed;
+}
+
+.add-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit-button {
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #1b5e20;
+}
+
+.plants-list,
+.reminders-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.plant-card,
+.reminder-card {
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.plant-card:hover,
+.reminder-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.plant-header,
+.reminder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.plant-header h5,
+.reminder-header h5 {
+  margin: 0;
+  color: #2e7d32;
+  font-size: 16px;
+}
+
+.health-status {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.health-status.excellent {
+  background-color: #c8e6c9;
+  color: #2e7d32;
+}
+
+.health-status.good {
+  background-color: #dcedc8;
+  color: #558b2f;
+}
+
+.health-status.fair {
+  background-color: #fff9c4;
+  color: #f9a825;
+}
+
+.health-status.poor {
+  background-color: #ffcdd2;
+  color: #c62828;
+}
+
+.reminder-date {
+  font-size: 14px;
+  color: #666;
+}
+
+.plant-details,
+.reminder-details {
+  margin-bottom: 15px;
+}
+
+.plant-details p,
+.reminder-details p {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.plant-actions,
+.reminder-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.action-button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.action-button.water {
+  background-color: #e3f2fd;
+  color: #1976d2;
+}
+
+.action-button.water:hover {
+  background-color: #bbdefb;
+}
+
+.action-button.fertilize {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.action-button.fertilize:hover {
+  background-color: #c8e6c9;
+}
+
+.action-button.complete {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.action-button.complete:hover {
+  background-color: #c8e6c9;
+}
+
+.action-button.undo {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.action-button.undo:hover {
+  background-color: #ffecb3;
+}
+
+.action-button.delete {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.action-button.delete:hover {
+  background-color: #ffcdd2;
+}
+
+.health-select,
+.stage-select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 14px;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 30px;
+  color: #757575;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+.reminders-list {
+  margin-top: 20px;
+}
+
+.reminder-item {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.reminder-item.completed {
+  background-color: #f0f8f0;
+  opacity: 0.8;
+}
+
+.reminder-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reminder-header h4 {
+  margin: 0;
+  color: #2c3e50;
+}
+
+.reminder-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.reminder-details {
+  font-size: 0.9rem;
+}
+
+.reminder-details p {
+  margin: 5px 0;
+}
+
+.action-button.toggle {
+  background-color: #4caf50;
+  color: white;
+}
+
+.action-button.delete {
+  background-color: #f44336;
+  color: white;
+}
+
+.upcoming-reminders {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.upcoming-reminders h3 {
+  margin-top: 0;
+  color: #2c3e50;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.upcoming-reminder-item {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.due-date {
+  font-size: 0.9rem;
+  color: #e74c3c;
+  font-weight: bold;
+}
+
+.no-items {
+  color: #7f8c8d;
+  font-style: italic;
+  text-align: center;
+  padding: 20px;
+} 
